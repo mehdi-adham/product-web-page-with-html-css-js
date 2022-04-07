@@ -1,0 +1,146 @@
+@font-face {
+  font-family: sahel;
+  src: url(fonts/sahel/Sahel.woff);
+}
+@font-face {
+  font-family: sahel-FD;
+  src: url(fonts/sahel/FD/Sahel-FD.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sahel, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  font-size: 15px;
+}
+a{
+  color: #35bff0;
+  text-decoration: none;
+}
+a:hover{
+  color: #428bca;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+.cover {
+  height: 350px;
+  border-radius: 12px;
+  min-width: 400px;
+  width: 100%;
+}
+
+.o-img {
+  overflow-x: scroll;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.p-hd {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+}
+
+.atc-btm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+
+.atc-top {
+}
+
+.atc-desc-main {
+  font-family: Sahel-FD;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.atc-title {
+  font-weight: bold;
+  line-height: 35px;
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 12px;
+  margin-right: 0;
+}
+
+.nv-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+  .nv-scroll::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+  }
+
+.atc-title {
+  font-weight: bold;
+  line-height: 35px;
+  border-bottom: 2px solid #e6e6e6;
+  margin-right: 0;
+  font-size: 20px;
+  padding-bottom: 12px;
+  font-family: sahel,'Open Sans',sans-serif;
+}
+
+.atc-btn {
+  min-width: 300px;
+  height: 50px;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  border-radius: 8px !important;
+  margin: 0;
+  background-color: #319fe9;
+  border: none;
+  color: white;
+}
+
+.atc-price {
+  font-family: Sahel-FD;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  line-height: 1.1;
+  font-size: 1.5em;
+}
+
+.atc-dprice {
+  vertical-align: middle;
+  text-decoration: line-through;
+  color: #ff0101;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  .cover {
+      min-width: 100%;
+      height: 250px;
+  }
+
+  .p-hd {
+      flex-direction: column;
+  }
+
+  .o-img {
+      min-width: 100%;
+  }
+
+  .atc-btn {
+      width: 100%;
+  }
+}

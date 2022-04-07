@@ -16,12 +16,15 @@ body {
   direction: rtl;
   font-size: 15px;
 }
-a{
+a {
   color: #35bff0;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: #428bca;
+}
+p {
+  padding: 12px 0;
 }
 .container {
   width: 1200px;
@@ -79,10 +82,10 @@ a:hover{
   overflow-y: hidden;
 }
 
-  .nv-scroll::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-  }
+.nv-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 .atc-title {
   font-weight: bold;
@@ -91,7 +94,7 @@ a:hover{
   margin-right: 0;
   font-size: 20px;
   padding-bottom: 12px;
-  font-family: sahel,'Open Sans',sans-serif;
+  font-family: sahel, "Open Sans", sans-serif;
 }
 
 .atc-btn {
@@ -128,19 +131,19 @@ a:hover{
     margin: auto;
   }
   .cover {
-      min-width: 100%;
-      height: 250px;
+    min-width: 100%;
+    height: 250px;
   }
 
   .p-hd {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .o-img {
-      min-width: 100%;
+    min-width: 100%;
   }
 
   .atc-btn {
-      width: 100%;
+    width: 100%;
   }
 }
